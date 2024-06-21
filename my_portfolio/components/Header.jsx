@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
-import MobileNav from "./MobileNav"
+import MobileNav from "./MobileNav";
 
 function Header() {
   return (
@@ -14,14 +14,14 @@ function Header() {
         </Link>
         {/* Desktop nav */}
         <div className="hidden xl:flex items-center gap-8">
-            <Nav/>
-            <Link href={'/contacts'}>
+          <Nav />
+          <Link href={"/contacts"}>
             <Button className="">Hire me</Button>
-            </Link>
+          </Link>
         </div>
         {/* Mobile */}
         <div className="xl:hidden">
-            <MobileNav />
+          <MobileNav />
         </div>
       </div>
     </header>
