@@ -1,8 +1,6 @@
 "use client";
-
-import { Description } from "@radix-ui/react-dialog";
-import { title } from "process";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs ,FaGit} from "react-icons/fa";
+import { SiCplusplus } from "react-icons/si";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
@@ -22,7 +20,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldvalue: "2+ year",
+      fieldvalue: "entry-level",
     },
     {
       fieldName: "Nationality",
@@ -30,7 +28,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldvalue: "sanchitmishra9795@gmail.com",
+      fieldvalue: "sanchitmishra9795@..",
     },
     {
       fieldName: "Language",
@@ -43,27 +41,17 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, minus",
+    "I'm a third-year student at Delhi Technological University (DTU), pursuing a degree in Computer Science.",
   items: [
     {
-      institution: "Online Course platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "Delhi Technological University",
+      degree: "Computer Science Engineering",
+      duration: "2022 - 2026(expected)",
     },
     {
-      institution: "Codacademy",
-      degree: "Half Stack Web Development Bootcamp",
-      duration: "2024",
-    },
-    {
-      institution: "Codacademy",
-      degree: "Half Stack Web Development Bootcamp",
-      duration: "2024",
-    },
-    {
-      institution: "Codacademy",
-      degree: "Half Stack Web Development Bootcamp",
-      duration: "2024",
+      institution: "GOVT. BOYS SENIOR SECONDARY SCHOOL",
+      degree: "Physics-Chemistry-Mathematics",
+      duration: "2019-2021",
     },
   ],
 };
@@ -71,71 +59,19 @@ const experince = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, minus",
-  items: [
-    {
-      companey: "Amazon",
-      position: "CEO",
-      duration: "2022 - present",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-    {
-      companey: "Apple",
-      position: "CFO",
-      duration: "2021 - 2022",
-    },
-  ],
+    "As a fresher eagerfor opportunities, I seek a platform to contribute and grow. Though I lack formal work experience, I have project experience and a strongwillingness to learn and improve.",
+  items: [],
 };
 
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, minus",
+    "Skilled in frontend development with knowledge in React and Next.js, I am currently learning backend technologies, including Node.js and Express.js, to become proficient in the MERN Stack.",
   skillList: [
+    {
+      icon: <SiCplusplus />,
+      title: "C++",
+    },
     {
       icon: <FaHtml5 />,
       title: "html 5",
@@ -164,6 +100,10 @@ const skills = {
       icon: <SiNextdotjs />,
       title: "next.js",
     },
+    {
+      icon: <FaGit />,
+      title: "Git",
+    },
   ],
 };
 
@@ -177,6 +117,7 @@ import {
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+
 const Resume = () => {
   return (
     <motion.div
@@ -189,9 +130,9 @@ const Resume = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-start justify-center py-12 xl:py-1"
     >
-      <div className=" container mx-auto">
+      <div className="container mx-auto">
         <Tabs
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
@@ -275,6 +216,7 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
+                <ScrollArea className="h-[400px]">
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                   {skills.skillList.map((skill, index) => {
                     return (
@@ -295,6 +237,7 @@ const Resume = () => {
                     );
                   })}
                 </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
             {/* about */}

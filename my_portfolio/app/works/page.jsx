@@ -23,58 +23,58 @@ const projects = [
     category: "Frontend",
     title: "Project 1",
     Description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, eveniet?",
+      " Created the MusicCourse UI using Next.js, emphasizing clean design and seamless navigation for an engaging userinterface experience.",
     stack: [
       {
-        name: "HTML 5",
+        name: "Next.js",
       },
       {
-        name: "CSS 3",
+        name: "Node.js",
       },
       {
-        name: "JavaScript",
+        name: "Aceternity UI",
       },
     ],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://github.com/Sanchitmiok/Resume/tree/main/MusicCourses(Nextjs)/nextjs",
+    github: "https://github.com/Sanchitmiok/Resume/tree/main/MusicCourses(Nextjs)/nextjs",
   },
   {
     num: "02",
-    category: "Frontend",
+    category: "Spotify-Clone",
     title: "Project 2",
     Description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, eveniet?",
+      "Developed a Spotify clone with HTML, CSS, and JS, ensuring responsive design and smooth user experience. Deployed forreal-world usage.",
     stack: [
       {
-        name: "Next.js",
+        name: "HTML",
       },
       {
-        name: "tailwind.css",
+        name: "Css",
       },
       {
-        name: "node.js",
+        name: "javaScript",
       },
     ],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    image: "/assets/work/spotify.png",
+    live: "https://myspotifyclone1.freewebhostmost.com/",
+    github: "https://github.com/Sanchitmiok/Resume/tree/main/Spotify-Clone/Spotify",
   },
   {
     num: "03",
-    category: "Frontend",
+    category: "PassOp-UI",
     title: "Project 3",
     Description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, eveniet?",
+      "I developed a secure and user-friendly password manager using React to safeguard and manage your passwords.I created a stunning and responsive website using React, ensuring a user-friendly experience.",
     stack: [
       {
-        name: "Next.js",
+        name: "react.js",
       },
       {
         name: "tailwind.css",
       },
     ],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/passMan.png",
     live: "",
     github: "",
   },
@@ -98,7 +98,7 @@ const Work = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center py-8 xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
@@ -176,7 +176,7 @@ const Work = () => {
                         <Image
                           src={item.image}
                           fill
-                          className="object-cover"
+                          className="object-cover object-center"
                           alt="image"
                         />
                       </div>
