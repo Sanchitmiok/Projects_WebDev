@@ -29,7 +29,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    Description: "xyz",
+    Description: "New delhi , India",
   },
 ];
 
@@ -55,8 +55,7 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent ">Let's work together</h3>
               <p className="text-white/60">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Veritatis, in.
+              I would be delighted to have the opportunity to work with you.
               </p>
               {/* input section */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -74,7 +73,6 @@ const Contact = () => {
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
                     <SelectItem value="x">Web Development</SelectItem>
-                    <SelectItem value="y">XYZ</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>

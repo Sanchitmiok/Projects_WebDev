@@ -1,5 +1,12 @@
 "use client";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs ,FaGit} from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGit,
+} from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -55,12 +62,29 @@ const education = {
     },
   ],
 };
+
 const experince = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
     "As a fresher eagerfor opportunities, I seek a platform to contribute and grow. Though I lack formal work experience, I have project experience and a strongwillingness to learn and improve.",
-  items: [],
+  items: [
+    {
+      company: "Google",
+      position: "Software developer",
+      duration: "2021 - 2023",
+    },
+    {
+      company: "Google",
+      position: "Software developer",
+      duration: "2021 - 2023",
+    },
+    {
+      company: "Google",
+      position: "Software developer",
+      duration: "2021 - 2023",
+    },
+  ],
 };
 
 const skills = {
@@ -167,7 +191,7 @@ const Resume = () => {
                           <div className="flex items-center gap-3">
                             {/* dot  */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.companey}</p>
+                            <p className="text-white/60">{item.company}</p>
                           </div>
                         </li>
                       );
@@ -217,26 +241,26 @@ const Resume = () => {
                   </p>
                 </div>
                 <ScrollArea className="h-[400px]">
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="flex w-full h-[150px] bg-[#232329] rounded-xl justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.title}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="flex w-full h-[150px] bg-[#232329] rounded-xl justify-center items-center group">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.title}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </ScrollArea>
               </div>
             </TabsContent>

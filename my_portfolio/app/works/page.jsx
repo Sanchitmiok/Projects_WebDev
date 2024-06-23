@@ -75,8 +75,8 @@ const projects = [
       },
     ],
     image: "/assets/work/passMan.png",
-    live: "",
-    github: "",
+    live: "https://github.com/Sanchitmiok/Resume/tree/main/PaasOp",
+    github: "https://github.com/Sanchitmiok/Resume/tree/main/PaasOp",
   },
 ];
 

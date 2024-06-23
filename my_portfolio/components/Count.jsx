@@ -2,20 +2,20 @@
 import CountUp from "react-countup";
 const counts = [
   {
-    num: 10,
+    num: 0,
     text: "Year of experience",
   },
   {
-    num: 20,
-    text: "Technologies mastered",
+    num: 9,
+    text: "Technologies learned",
   },
   {
-    num: 30,
+    num: 10,
     text: "Project done",
   },
   {
-    num: 40,
-    text: "Code commits",
+    num: 100,
+    text: "+Code commits",
   },
 ];
 const Count = () => {

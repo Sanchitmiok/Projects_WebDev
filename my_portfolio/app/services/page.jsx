@@ -7,28 +7,7 @@ const services = [
     title: "Web Developer",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias velit fugit deserunt error sapiente reiciendis.",
-    href: "/",
-  },
-  {
-    num: "02",
-    title: "Web Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias velit fugit deserunt error sapiente reiciendis.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "Web Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias velit fugit deserunt error sapiente reiciendis.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "Web Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias velit fugit deserunt error sapiente reiciendis.",
-    href: "",
+    href: "/contacts",
   },
 ];
 import { motion } from "framer-motion";
