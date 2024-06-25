@@ -65,10 +65,10 @@ const projects = [
     category: "PassOp-UI",
     title: "Project 3",
     Description:
-      "I developed a secure and user-friendly password manager using React to safeguard and manage your passwords.I created a stunning and responsive website using React, ensuring a user-friendly experience.",
+      "Developed an intuitive password manager UI utilizing React and elevated it further with the enhanced styling of Tailwind CSS.",
     stack: [
       {
-        name: "react.js",
+        name: "React.js",
       },
       {
         name: "tailwind.css",
@@ -98,7 +98,7 @@ const Work = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[80vh] flex flex-col justify-center py-8 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center py-2 xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
@@ -167,16 +167,16 @@ const Work = () => {
             >
               {projects.map((item, index) => {
                 return (
-                  <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 ">
+                  <SwiperSlide key={index} className="w-full rounded-2xl">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-2xl">
                       {/* Overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/20 z-10"></div>
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/20 z-10 rounded-2xl"></div>
                       {/* image */}
-                      <div className="relative w-full h-full">
+                      <div className="relative w-full h-full rounded-2xl">
                         <Image
                           src={item.image}
                           fill
-                          className="object-cover object-center"
+                          className="object-center-fill  rounded-2xl"
                           alt="image"
                         />
                       </div>

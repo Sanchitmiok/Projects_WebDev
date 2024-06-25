@@ -4,9 +4,9 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Developer",
+    title: "Frontend Web Developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias velit fugit deserunt error sapiente reiciendis.",
+      "I am interested in the Front-End Web Developer position and would love the opportunity to contribute my skills and experience to your team.",
     href: "/contacts",
   },
 ];

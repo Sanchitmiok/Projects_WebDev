@@ -60,6 +60,16 @@ const education = {
       degree: "Physics-Chemistry-Mathematics",
       duration: "2019-2021",
     },
+    {
+      institution: "GOVT. BOYS SENIOR SECONDARY SCHOOL",
+      degree: "Physics-Chemistry-Mathematics",
+      duration: "2019-2021",
+    },
+    {
+      institution: "GOVT. BOYS SENIOR SECONDARY SCHOOL",
+      degree: "Physics-Chemistry-Mathematics",
+      duration: "2019-2021",
+    },
   ],
 };
 
@@ -67,7 +77,7 @@ const experince = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "As a fresher eagerfor opportunities, I seek a platform to contribute and grow. Though I lack formal work experience, I have project experience and a strongwillingness to learn and improve.",
+    "Project-experienced fresher eager to learn, grow, and contribute, despite lack of formal work experience.",
   items: [
     {
       company: "Google",
@@ -90,7 +100,7 @@ const experince = {
 const skills = {
   title: "My skills",
   description:
-    "Skilled in frontend development with knowledge in React and Next.js, I am currently learning backend technologies, including Node.js and Express.js, to become proficient in the MERN Stack.",
+    "Skilled in frontend with React/Next.js, learning backend (Node.js/Express.js) for MERN Stack proficiency.",
   skillList: [
     {
       icon: <SiCplusplus />,
@@ -240,7 +250,7 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[360px]">
                   <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                     {skills.skillList.map((skill, index) => {
                       return (

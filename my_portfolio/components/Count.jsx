@@ -8,8 +8,8 @@ const counts = [
   {
     num: 9,
     text: "Technologies learned",
-  },
-  {
+  }, 
+  { 
     num: 10,
     text: "Project done",
   },
@@ -26,7 +26,7 @@ const Count = () => {
        mx-auto xl:max-w-none">
         {counts.map((item, index) => {
           return(
-            <div className="flex-1 flex gap-4 items-center justify-start xl:justify-start">
+            <div className="flex-1 flex gap-4 items-center justify-start xl:justify-start" key={index}>
             <CountUp end={item.num}
             duration={5}
             delay={2}

@@ -22,7 +22,7 @@ const Home = () => {
               Computer Science Engineering student at Delhi College of
               Engineering (DCE), class of 2026. Proficient in C++, skilled in
               Data Structures and Algorithms, and developing expertise in MERN
-              Stack (MongoDB, Express.js, React, Node.js). Passionate about
+              Stack. Passionate about
               building dynamic web applications.
             </p>
             {/* Btn and socials */}
