@@ -6,7 +6,7 @@ const links = [
   { name: "Service", path: "/services" },
   { name: "Resume", path: "/resume" },
   { name: "Work", path: "/works" },
-  { name: "Contact", path: "/contacts" },
+  // { name: "Contact", path: "/contacts" },
 ];
 const Nav = () => {
   const pathname = usePathname();
