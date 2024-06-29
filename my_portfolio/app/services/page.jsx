@@ -7,7 +7,7 @@ const services = [
     title: "Frontend Web Developer",
     description:
       "I am interested in the Front-End Web Developer position and would love the opportunity to contribute my skills and experience to your team.",
-    href: "/contacts",
+    href: "/resume",
   },
 ];
 import { motion } from "framer-motion";

@@ -60,16 +60,6 @@ const education = {
       degree: "Physics-Chemistry-Mathematics",
       duration: "2019-2021",
     },
-    {
-      institution: "GOVT. BOYS SENIOR SECONDARY SCHOOL",
-      degree: "Physics-Chemistry-Mathematics",
-      duration: "2019-2021",
-    },
-    {
-      institution: "GOVT. BOYS SENIOR SECONDARY SCHOOL",
-      degree: "Physics-Chemistry-Mathematics",
-      duration: "2019-2021",
-    },
   ],
 };
 
@@ -79,21 +69,11 @@ const experince = {
   description:
     "Project-experienced fresher eager to learn, grow, and contribute, despite lack of formal work experience.",
   items: [
-    {
-      company: "Google",
-      position: "Software developer",
-      duration: "2021 - 2023",
-    },
-    {
-      company: "Google",
-      position: "Software developer",
-      duration: "2021 - 2023",
-    },
-    {
-      company: "Google",
-      position: "Software developer",
-      duration: "2021 - 2023",
-    },
+    // {
+    //   company: "Google",
+    //   position: "Software developer",
+    //   duration: "2021 - 2023",
+    // },
   ],
 };
 

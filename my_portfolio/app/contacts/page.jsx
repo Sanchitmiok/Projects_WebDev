@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
-import axios from "axios";
+// import { useState } from "react";
+// import axios from "axios";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -37,31 +37,31 @@ const info = [
 
 import { motion } from "framer-motion";
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    service: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   phone: "",
+  //   service: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post("/api/submit", formData);
-      console.log("Form submitted successfully:", response.data);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevState) => ({
+  //     ...prevState,
+  //     [name]: value,
+  //   }));
+  // };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await axios.post("/api/submit", formData);
+  //     console.log("Form submitted successfully:", response.data);
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  //   }
+  // };
 
   return (
     <motion.section
@@ -74,14 +74,14 @@ const Contact = () => {
           ease: "easeIn",
         },
       }}
-      className="py-2"
+      className="py-2 " 
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-[20px]">
+        <div className="flex  flex-col xl:flex-row gap-[20px]">
           {/* form section */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form
-              onSubmit={handleSubmit}
+              // onSubmit={handleSubmit}
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
             >
               <h3 className="text-4xl text-accent ">Let's work together</h3>
@@ -92,33 +92,33 @@ const Contact = () => {
                   name="firstName"
                   type="text"
                   placeholder="Firstname"
-                  onChange={handleChange}
+                  // onChange={handleChange}
                 />
                 <Input
                   name="lastname"
                   type="text"
                   placeholder="Lastname"
-                  onChange={handleChange}
+                  // onChange={handleChange}
                 />
                 <Input
                   name="email"
                   type="email"
                   placeholder="Email"
-                  onChange={handleChange}
+                  // onChange={handleChange}
                 />
                 <Input
                   name="phone"
                   type="text"
                   placeholder="Phone"
-                  onChange={handleChange}
+                  // onChange={handleChange}
                 />
               </div>
               {/* select */}
               <Select
                 name="service"
-                onValueChange={(value) =>
-                  setFormData((prevState) => ({ ...prevState, service: value }))
-                }
+                // onValueChange={(value) =>
+                //   setFormData((prevState) => ({ ...prevState, service: value }))
+                // }
               >
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
@@ -135,10 +135,10 @@ const Contact = () => {
                 name="message"
                 className="h-[100px] after"
                 placeholder="Type your message here"
-                onChange={handleChange}
+                // onChange={handleChange}
               />
               {/* btn */}
-              <Button size="lg" type="submit" className="max-w-40 rounded-3xl">
+              <Button size="lg"  className="max-w-40 rounded-3xl">
                 Send message
               </Button>
             </form>
